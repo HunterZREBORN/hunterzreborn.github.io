@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Hunter Z - Perfect Executor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Ultimate Execution Experience With Privacy.">
+    <meta name="twitter:description" content="The Ultimate Execution Experience With Privacy.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1144829769825931395/1148942821978554439/Screenshot_2023-08-26_131310_copy.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1144829769825931395/1148942821978554439/Screenshot_2023-08-26_131310_copy.png">
+    <meta name="twitter:title" content="Hunter Z">
+    <meta name="keywords" content="roblox, rice, green, electron">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="627x603" href="https://cdn.discordapp.com/attachments/1144829769825931395/1148942821978554439/Screenshot_2023-08-26_131310_copy.png">
+    <script src="js/61915796ee.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#9400F1" />
+    
+    
+<style>
+d
+img {vertical-align: middle;}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-23ZNQGLRVS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-23ZNQGLRVS');
+</script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><h6 class="img-fluid" alt="logo">Hunter Z</h6></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">Why Choose Us</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#download">Downloads</a> </li>
+                      
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Hunter Z</h1>
+        </div>
+         <div><img src="images/UI.png" alt="phone" class="img-fluid"></div> 
+        <div style="max-width: 1000px;position: relative;margin: auto;">
+
+<!--<div id="slide1" style="display: none;-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;animation-name: fade;animation-duration: 1.5s;">-->
+<!--  <img src="https://ryos.best/assets/images/UI.png">-->
+<!--  <div style="color: #f2f2f2;font-size: 15px;padding: 8px 12px;position: absolute;bottom: 8px;width: 100%;text-align: center;">UI</div>-->
+<!--</div>-->
+
+<!--<div id="slide2"  style="display: none;-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;animation-name: fade;animation-duration: 1.5s;">-->
+<!--    <div id="player"></div>-->
+<!--</div>-->
+
+<!--<div id="slide3"  style="display: none;-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;animation-name: fade;animation-duration: 1.5s;">-->
+<!--  <img src="https://ryos.best/assets/images/darkhub.png" style="width:662px;height:335px;">-->
+<!--  <div style="color: #f2f2f2;font-size: 15px;padding: 8px 12px;position: absolute;bottom: 8px;width: 100%;text-align: center;">Running DarkHub</div>-->
+<!--</div>-->
+
+
+
+</div>
+<br>
+
+<script>
+var player;
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player', {
+      height: '335',
+      width: '662',
+      videoId: 'kA1zmr6XUoU',
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+    console.log(player)
+}
+
+var isplaying = false
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
+        isplaying = true
+        console.log(isplaying)
+    }
+    else if(event.data == YT.PlayerState.PAUSED){
+        isplaying = false;
+    }
+}
+
+
+var slideIndex = 1;
+showSlides();
+
+function showSlides() {
+  if (slideIndex == 3 && isplaying) {
+    setTimeout(showSlides, 3500)  
+    return;
+  }
+  var i;
+  var dots = document.getElementsByClassName("dot");
+  document.getElementById("slide1").style.display = "none";
+  document.getElementById("slide2").style.display = "none";  
+  document.getElementById("slide3").style.display = "none";  
+  slideIndex++;
+  if (slideIndex > 4) {slideIndex = 2}    
+  
+  if (isplaying && slideIndex != 3)
+  {
+      slideIndex = 3;
+  }
+  
+  document.getElementById("dot1").style.backgroundColor = "#bbb";
+  document.getElementById("dot2").style.backgroundColor = "#bbb";
+  document.getElementById("dot3").style.backgroundColor = "#bbb";
+  document.getElementById(`slide${slideIndex-1}`).style.display = "block";  
+  document.getElementById(`dot${slideIndex-1}`).style.backgroundColor = "#717171";
+
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+</script>
+    </header>
+
+    <div class="section light-bg" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h3>Why Choose Us</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Stability</h4>
+                                    <p class="card-text">With Our Insanely Powerful Custom DLL, Stability Is Our Signature When Running Scripts</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Reliable</h4>
+                                    <p class="card-text">Our Advanced IDE Is The Best And Most Reliable On The Market</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Fast Updates</h4>
+                                    <p class="card-text">No More Waiting For Updates: Most Of The Time we Update Instantly</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h3>Frequently Asked Questions</h3>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Can I Run All My Favourite Scripts?</h4>
+                    <p class="light-font mb-5">Yes You Can! Our DLL Provides More Than Enough Power To Execute Your Favorite Scripts</p>
+
+                </div>
+
+                <div class="col-md-6">
+              
+                    <h4 class="mb-3">Is Hunter Z Malware? My Antivirus Flags It</h4>
+                    <p class="light-font mb-5">Hunter Z Is <b>Not</b> A Virus. It Just Gets Flagged Due To The Nature Of DLL Injectors</p>
+                </div>
+
+                <div class="col-md-6">
+              
+                    <h4 class="mb-3">       Where Do I Get Help And Support?</h4>
+                    <p class="light-font mb-5">        You Can get Support And Help In Our Discord Server. <b>Dont Download Stuff From Strangers</b></p>
+                </div>
+
+                <div class="col-md-6">
+              
+                    <h4 class="mb-3">Will There Be A Free Version/Is Hunter Z Paid?</h4>
+                    <p class="light-font mb-5">Hunter Z Is A <b>Paid</b> Exploit. There Will be A Free Version Soon</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+    <div class="section light-bg" id="download">
+        <div class="container">
+            <div class="call-to-action">
+
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>Download</h2>
+                <!-- <p class="tagline">You can still download Electron, but it will <b>NOT</b> work due to the recent changes with the UWP client from Roblox.</p> -->
+                <!-- <p class="tagline">You can download Electron by clicking the <b>download</b> button below. If you have issues with using Electron, please press the <b>join</b> button below</p> -->
+                <div class="my-4">
+                    <a href="https://github.com/0xVienna/Hunter-Z/releases/download/Installer/Hunter.Z.Installer.rar" target="_blank" class="btn btn-light">Download</a> 
+                    <a href="" target="_blank" class="btn btn-light">Light Version (NOT OUT)</a> 
+                </div>
+                
+                <div class="my-4">
+                    <a href="https://dsc.gg/hunterzexecutor" target="_blank" class="btn btn-light">Our Discord Server</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 text-center">
+        <p class="mb-2"><small>Copyright Hunter Z 2023. All Right Reserved</small></p>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" data-cf-beacon="{" rayid":"811e8a767e3dd0b5","version":"2023.8.0","r":1,"b":1,"token":"134653e188a946d0a1596d399c7b242c","si":100}"="" crossorigin="anonymous"></script>
+
+
+
+</body></html>
